@@ -34,7 +34,7 @@ if(message.content === prefix + "infodiscord") {
             .addField(thingToEcho, "répondre avec")
             .setColor("#00F710")
             .setTimestamp()
-        message.guild.channels.find("name", "sondage infisiaRP et autre").sendEmbed(embed)
+        message.guild.channels.find("name", "sondage-infisiaRP-et-autre").sendEmbed(embed)
         .then(function (message) {
             message.react("✔")
             message.react("❌")
