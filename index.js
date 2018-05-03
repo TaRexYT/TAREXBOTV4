@@ -44,7 +44,7 @@ if(message.content === prefix + "infodiscord") {
         }
             bot.on('message', message => {
                 if (message.content === ':::help') {
-                message.channel.sendMessage(':::TaRex,:::infodiscord');
+                message.channel.sendMessage('les commandes du TaRex bot son:::TaRex :::infodiscord voilla :)');
               }
             });
             
