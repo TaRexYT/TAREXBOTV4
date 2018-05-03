@@ -31,7 +31,7 @@ if(message.content === prefix + "infodiscord") {
         let thingToEcho = args.join (" ")
         var embed = new Discord.RichEmbed()
             .setDescription("SONDAGE! :)")
-            .addField(thingToEcho, "répondre avec")
+            .addField(thingToEcho, "répondre avec :heavy_check_mark: ou :x:")
             .setColor("#00F710")
             .setTimestamp()
         message.guild.channels.find("name", "sondage").sendEmbed(embed)
