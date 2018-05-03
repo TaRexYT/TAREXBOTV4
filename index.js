@@ -8,7 +8,7 @@ bot.on('ready', () => {
     console.log("Le TaRex BotV4 est ok hacked by TaRex XD bot by TaRex :) !");
 });
 
-bot.login("NDQxMzc0NDkwMDg2MjExNTg3.DcxQTQ.q-ic0rTfOasIOR-ZxOtG_SnNkYM");
+bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if(message.content === ":::TaRex"){
