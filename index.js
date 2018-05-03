@@ -30,7 +30,8 @@ if(message.content === prefix + "infodiscord") {
         let args = message.content.split(" ").slice(1);
         let thingToEcho = args.join (" ")
         var embed = new Discord.RichEmbed()
-            .setDescription("Pas codé tu l'as dans le cul mamen ! :)")
+            .setDescription("SONDAGE! :)")
+            .addField(thingToEcho, "répondre avec")
             .setColor("#00F710")
             .setTimestamp()
         message.guild.channels.find("name", "sondage").sendEmbed(embed)
@@ -40,11 +41,12 @@ if(message.content === prefix + "infodiscord") {
         }).catch(function() {
         });
         }else{
+        }
             bot.on('message', message => {
                 if (message.content === ':::help') {
                 message.channel.sendMessage(':::TaRex,:::infodiscord');
               }
             });
             
-}})
+})
 
